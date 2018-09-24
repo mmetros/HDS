@@ -54,12 +54,12 @@
         <ul id="bottomNavContainer">
           <li id="logo"><a href="index.html"><img src="../static/images/logo.svg" alt="HD Sheldon & Co Logo"></a></li>
           <div id="siteNav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./companyAndServices.html">Company & Services</a></li>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="#">Company & Services</a></li>
             <li><a href="#">Product Categories</a></li>
-            <li><a id="active" href="#">Manufacturers</a></li>
+            <li><a id="active" href="{{url_for('manufacturers')}}">Manufacturers</a></li>
             <li><a href="#">Events</a></li>
-            <li><a href="./contact">Contact</a></li>
+            <li><a href="#">Contact</a></li>
           </div>
         </ul>
       </div>
@@ -74,10 +74,10 @@
       <div id="footerContainer">
 
         <ul id="footNav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{url_for('index')}}">Home</a></li>
           <li><a href="./companyAndServices">Company & Services</a></li>
-          <li><a href="./manufacturersAndPriceLists.html">Product Categories</a></li>
-          <li><a href="./manufacturersAndPriceLists.html">Manufacturers</a></li>
+          <li><a href="#">Product Categories</a></li>
+          <li><a href="{{url_for('manufacturers')}}">Manufacturers</a></li>
           <li><a href="">Events</a></li>
           <li><a href="./contact">Contact</a></li>
         </ul>

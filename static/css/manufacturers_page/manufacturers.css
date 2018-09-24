@@ -1,0 +1,103 @@
+/* fonts to be used
+Roboto for headings and Raleway for lower content
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+
+#mainContainer{
+}
+
+#mainInnerContainer{
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+  #mainBanner{
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+    background: #1780ae left bottom repeat-x;
+    color: #fff;
+
+  }
+
+  #mainBanner>h2{
+    font-family: Roboto;
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  #mainBanner>p{
+    width: 70%;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;
+    line-height: 20px;
+
+    font-family: Raleway;
+  }
+
+  #filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  #filter>li{
+    list-style-type: none;
+    cursor: pointer;
+
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+    font-family: Raleway;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #filter li>span{
+    text-align: center;
+  }
+
+  #logos{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #logos>li{
+    width: 33.333%;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #logos img {
+  margin-bottom: 40px;
+
+  max-height: 50px;
+  }
