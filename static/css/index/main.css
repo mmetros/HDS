@@ -1,0 +1,126 @@
+/* fonts to be used
+Roboto for headings and Raleway for lower content
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+#container1{
+  margin-top: 100px;
+  /* fix container spacing */
+  height: 500px;
+  width: 100%;
+}
+
+
+#container1ImageBox>img{
+/* Dim the photo */
+  filter: brightness(60%);
+
+  width: 100%;
+  height: 500px;
+
+}
+
+#container1ImageContent{
+  position: relative;
+  bottom: 330px;
+  left: 40px;
+  width: 100%;
+  letter-spacing: 2px;
+
+  /* style */
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+#lineUnderImageContent{
+  border-bottom: 2px solid #fff;
+}
+
+#container1Welcome{
+  font-family: Raleway;
+  font-size: 16px;
+}
+
+
+.gradient_line{
+    margin: 0px 0 0 0;
+    display: block;
+    border: none;
+    height: 2px;
+    background: #0071B9;
+    background: linear-gradient(to right, white, #d1cfcf, #b2b2b2, #d1cfcf, white);
+}
+
+/* Container 2 */
+
+#container2{
+  padding: 50px 70px 0px 70px;
+}
+
+#container2Content{
+  font-size: 15px;
+  font-family: Raleway;
+}
+
+#container2Content>h2{
+  /* Center the heading */
+  text-align: center;
+}
+
+#container2Title{
+  /* Style */
+  color: #00061c;
+  font-family: Roboto;
+}
+
+#container2Content p{
+  margin-top: 30px;
+}
+
+#container2Content p:last-child{
+  margin-bottom: 30px;
+}
+
+/* Container 3 */
+
+#container3{
+  width: 100%;
+  height: 100%;
+}
+
+#container3Content{
+  margin-top: 70px;
+  text-align: center;
+
+  /* text styles */
+  font-size: 22px;
+  font-family: Roboto;
+}
+
+#container3Title{
+  /* Text Stle */
+  color:#00061C
+}
+
+#companyImageContainer{
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+
+  /* Flex-Box Properties */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#companyImageContainer img{
+  margin-bottom: 40px;
+  width: 33.333%;
+  max-height: 50px;
+
+}

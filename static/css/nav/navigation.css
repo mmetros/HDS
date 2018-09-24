@@ -1,0 +1,187 @@
+/* fonts to be used
+Roboto for headings and Raleway for lower content
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#topNav{
+  background-color: #f2f5f8;
+  border-bottom: 1px solid #cbd6e2;
+  height: 62px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#topNavContainer{
+  max-width: 1080px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#nav_left{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#nav_left>li{
+  display: block;
+  position: relative;
+}
+
+#nav_left li a,
+#nav_right li a{
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#divider{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.languageAndContactDropdown{
+  opacity: 0;
+  list-style-type: none;
+  position: absolute;
+  display: none;
+  top:40px;;
+  left:0;
+
+  /* How do we fix transition when we have display none */
+
+}
+
+.languageAndContactDropdown li {
+  padding: 4px;
+}
+
+#language:hover .languageAndContactDropdown,
+#contact:hover .languageAndContactDropdown {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #cbd6e2;
+  border-radius: 4px;
+}
+
+#language:hover>a,
+#contact:hover>a,
+#requestQuote:hover a{
+  transition-duration: .3s;
+  color: #1da1db;
+}
+
+
+
+
+
+#search{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search form input[type="search"]{
+  width: 350px;
+}
+
+#requestQuote{
+
+}
+
+
+
+/* Bottom Nav Begin */
+
+#bottomNav{
+  height: 62px;
+  width: 100%;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Border */
+
+  border-bottom: 1px solid #cbd6e2;
+}
+
+#bottomNavContainer{
+  max-width: 1080px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+#logo>a>img{
+  max-height: 40px;
+  max-width: 100%;
+  margin-right: 70%;
+}
+
+
+
+#siteNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#siteNav>li{
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+  /* display */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#siteNav>li>a{
+  font-family: Roboto;
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+#siteNav>li>a:hover{
+  border-width: 2px;
+  color: #1780ae;
+  font-weight: 400;
+}
+
+#active{
+  color: #1780ae !important;
+}
