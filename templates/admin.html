@@ -1,20 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
+<link rel="stylesheet" href="../static/css/admin/admin.css">
 
-<div>
-  <h1>Admin Tools</h1>
+<div id="form_container">
 
-  <form>
+  <h1 id="admin_header">Admin Tools</h1>
+
+  <!-- <form>
     <input type="text" name=>
     <input type=text size=5 name=proglang>
     <a href="#" id=process_input><button>Submit
     </button></a>
-  </form>
+  </form> -->
 
+  <form ="">
+    <div class="form-group">
+      <label for="manufacturer">Manufacturer</label>
+      <input type="text" name=m_name class="form-control" id="manufacturer" placeholder="Enter Manufacturer Name">
+    </div>
+    <div class="form-group">
+      <label for="link">Link</label>
+      <input type="text" name=m_link class="form-control" id="link" placeholder="Enter Link to Website">
+    </div>
+    <div class="form-group">
+      <label for="logo">Logo Link</label>
+      <input type="text" name=m_logo class="form-control" id="link" placeholder="Enter link to logo">
+    </div>
+    <button type="submit" class="btn btn-primary" id="process_input">Submit</button>
+  </form>
 </div>
 
+
+<div id="result" title="Database Message"></div>
+
+<!-- Scripts -->
 <script type="text/javascript" src="../static/js/admin.js">
-
 </script>
-
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
 {% endblock %}

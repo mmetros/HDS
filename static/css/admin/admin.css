@@ -1,0 +1,22 @@
+#form_container{
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#admin_header{
+  text-align: center;
+}
+
+form{
+  margin-left:20%;
+  margin-right: 20%;
+}
+
+form>.btn{
+  width: 100%;
+}
