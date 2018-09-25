@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- add Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- style sheets -->
     <link rel="stylesheet" type="text/css" href="../static/css/nav/main.css">
     <link rel="stylesheet" type="text/css" href="../static/css/footer/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 <!-- Roboto for Headers & Raleway for paragraphs -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -57,7 +60,7 @@
             <li><a href="{{url_for('index')}}">Home</a></li>
             <li><a href="#">Company & Services</a></li>
             <li><a href="#">Product Categories</a></li>
-            <li><a id="active" href="{{url_for('manufacturers')}}">Manufacturers</a></li>
+            <li><a class="active" href="{{url_for('manufacturers')}}">Manufacturers</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Contact</a></li>
           </div>
@@ -102,6 +105,8 @@
     </footer>
     <!-- Footer End -->
 
+    <script type="text/javascript" src="../static/js/nav.js"></script>
 
+    </script>
   </body>
 </html>
