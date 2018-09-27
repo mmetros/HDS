@@ -25,6 +25,8 @@ def _background_process():
     name = request.args.get('name')
     link = request.args.get('link')
     logo = request.args.get('logo')
+    product_categories = request.args.get('prod_cat')
+    print(product_categories)
     if find_by_name(name, link, logo):
         update(name, link, logo)
         return jsonify(result = "{} has been updated with the following info: Name: {}, Link: {}, Logo: {}".format(name, name,link,logo))

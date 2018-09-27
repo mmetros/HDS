@@ -7,8 +7,11 @@ cursor = connection.cursor()
 create_table = """CREATE TABLE IF NOT EXISTS manufacturers (
                         name text,
                         link text,
-                        logo text
+                        logo text,
+                        product_categories
                     )"""
+
+
 cursor.execute(create_table)
 
 connection.commit()
