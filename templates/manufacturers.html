@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<link type="text/css" rel="stylesheet" href="../static/css/manufacturers_page/manufacturers.css"
+<link type="text/css" rel="stylesheet" href="../static/css/manufacturers_page/manufacturers.css">
 
 <div id="mainContainer">
   <div id="mainInnerContainer">
@@ -28,11 +28,12 @@
     </ul>
 
     <ul id="logos">
+      {% for logo in logos%}
+        <img src="{{logo}}">
+      {% endfor %}
     </ul>
 
   </div>
 </div>
-
-
 
 {% endblock %}
